@@ -84,14 +84,14 @@ function clickDequeue(){
     // console.log(pq.dequeue())
     let paciente = pq.dequeue()
     console.log(paciente.value)
-    document.getElementById('resultado').innerHTML = paciente.value || "Não tem nada"
+    document.getElementById('resultado').innerHTML = paciente.value || "Não tem ninguém"
 }
 
 
 pq.enqueue("joao", "verde")
 pq.enqueue("jose", "vermelho")
 pq.enqueue("joseph", "amarelo")
-pq.enqueue("joseph", "amarelo")
+pq.enqueue("pedro", "amarelo")
 
 
 
