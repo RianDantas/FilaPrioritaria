@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/recepcao.css">
+    <script src="pQueue.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Fila de espera</h1>
+
+        <form>
+            <p>Seu nome:</p>
+            <input type="text" id="nome">
+            <p>Sua prioridade</p>
+            <input type="text" placeholder="verde, amarelo ou vermelho" id="prioridade">
+            <input id="entrar" type="button"  onclick="clickEnqueue()" value="Entrar">
+        </form>
+
+        <a href="index.html">
+            <div class="a"><p id="voltar">Voltar</p></div>
+        </a>
+
+    </div>
+    
+</body>
+</html>

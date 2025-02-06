@@ -1,0 +1,73 @@
+body{
+    margin: 0;
+    background-image: url('images/chamada.png');
+    background-size: cover;
+    display: flex;
+    
+
+}
+
+
+.container{
+    background-color: rgb(255, 255, 255);
+    width: 50%;
+    height: 140px;
+    display:flex;
+    border-radius: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: 48%;
+    margin-top: 15%;
+}
+
+#paciente{
+    background-color: rgb(255, 255, 255);
+    width: 99%;
+    height: 50px;
+    border-radius: 15px;
+    border-style: groove;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#entrar{
+    width: 50%;
+    height: 25px;
+    border-radius: 10px;
+    margin-left: 5%;
+    margin-top: 5px;
+    background-color: rgb(0, 255, 21);
+    font-family:  'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: none;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+}
+.a{
+    background-color: rgb(0, 17, 255);
+    color: rgb(255, 255, 255);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    width: 90px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    /* margin-top: px; */
+
+}
+
+#voltar{
+    margin: 0;
+}
+
+#resultado{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+

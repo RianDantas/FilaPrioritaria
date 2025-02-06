@@ -1,0 +1,50 @@
+body{
+    background: url('images/image.png');
+    background-size: cover;
+    margin: 0;
+}
+
+.container{
+    width: 40%;
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: auto;
+    margin-top: 15%;
+}
+
+.botoes{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: center;
+
+    /* background-color: brown; */
+}
+a{
+    text-decoration: none;
+}
+.a{
+    background-color: rgb(0, 17, 255);
+    color: rgb(255, 255, 255);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    width: 120px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+h1{
+    font-family: sans-serif;
+    font-size: 50px;
+    margin: -10px;
+}
+
