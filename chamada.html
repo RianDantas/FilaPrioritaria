@@ -1,24 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/chamada.css">
     <script src="pQueue.js"></script>
-    <title>Document</title>
+    <title>Chamar Paciente</title>
 </head>
+
 <body>
     <div class="container">
-        <input id="entrar" type="button" onclick="clickDequeue()" value="Chamar Paciente">
-        
-        <div id="paciente"> <p id="resultado">resultado</p> </div>
-        
+        <form>
+            <button id="entrar" type="submit" onclick="clickDequeue()">Chamar Paciente</button>
+        </form>
+
+        <div id="paciente">
+            <p id="resultado"></p>
+        </div>
+
         <a href="index.html">
-            <div class="a"><p id="voltar">Voltar</p></div>
+            <div class="a">
+                <p id="voltar">Voltar</p>
+            </div>
         </a>
 
     </div>
 
-    
+
 </body>
+
 </html>

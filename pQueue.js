@@ -7,7 +7,7 @@ class Node {
 
 class PriorityQueue {
     constructor() {
-        this.items = []
+        this.items = this.carregarLocalStorage()
     }
 
     isEmpty(){
@@ -44,13 +44,17 @@ class PriorityQueue {
             }
             
         }
+        this.salvarLocalStorage()
     }
 
     dequeue(){
         if(this.isEmpty()){
             return "fila vazia"
         }
-        return this.items.shift()
+
+        let dequeue = this.items.shift()
+        this.salvarLocalStorage()
+        return dequeue
     }
 
     peek(){
@@ -67,6 +71,25 @@ class PriorityQueue {
     clear(){
         this.items = []
     }
+
+
+    carregarLocalStorage(){
+        let array = localStorage.getItem('node')
+
+        if(array){
+            return JSON.parse(array)
+        }else{
+            return []
+        }
+    }
+
+
+    salvarLocalStorage(){
+        localStorage.setItem('node', JSON.stringify(this.items))
+    }
+
+
+
 
 }
 
@@ -87,14 +110,10 @@ function clickDequeue(){
     document.getElementById('resultado').innerHTML = paciente.value || "Não tem ninguém"
 }
 
-
-pq.enqueue("joao", "verde")
-pq.enqueue("jose", "vermelho")
-pq.enqueue("joseph", "amarelo")
-pq.enqueue("pedro", "amarelo")
-
-
-
+function clickPeek(){
+    let paciente = pq.peek()
+    document.getElementById('resultado').innerHTML = paciente.value || "Não tem ninguém"
+}
 
 
 
